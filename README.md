@@ -36,6 +36,11 @@ Updated and added to GitHub: 25 May 2021
 That's it! See images of what the desktop shortcut and popup window look like, above. 
 
 
+# Todo:
+
+**Can someone please help me figure out how to enhance this one step further by making it change the icon name each time too?--ie: instead of saying "Proxy On-Off" on the shortcut, have it say "Proxy is ON" or "Proxy is OFF", according to its current state.** I'm not sure how to take it that one step further, and I've put enough time into it for now...
+
+
 # References:
 1. See my answer on Stack Overflow here: [Batch File to disable internet options proxy server](https://stackoverflow.com/questions/18439373/batch-file-to-disable-internet-options-proxy-server/44752679#44752679)
 1. (Someone else's answer) [Batch File to disable internet options proxy server](https://stackoverflow.com/questions/18439373/batch-file-to-disable-internet-options-proxy-server/27092872#27092872) - taught me how to use a .vbs script to toggle the Proxy on and off 
