@@ -9,7 +9,6 @@ Option Explicit
 
 'Variables & Constants:
 Dim ProxySettings_path, VbsScript_filename
-ProxySettings_path = "C:\Users\Gabriel\Proxy Settings"
 VbsScript_filename = "toggle_proxy_on_off.vbs"
 'sec; change this value to set how long the message box displays when you toggle the proxy setting
 Const MESSAGE_BOX_TIMEOUT = 1
@@ -20,6 +19,7 @@ Set WSHShell = WScript.CreateObject("WScript.Shell")
 'get the username string for use in path names, since trying to use the "%USERNAME%" variable
 'directly in path names throws an error
 username = WSHShell.ExpandEnvironmentStrings("%USERNAME%")
+ProxySettings_path = "C:\Users\" + username + "\Windows_Proxy_Toggler"
 
 'Determine current proxy setting and toggle to opposite setting
 proxyEnableVal = wshshell.regread("HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyEnable")
@@ -70,7 +70,7 @@ Sub CreateOrUpdateDesktopShortcut(onOrOff)
     ElseIf onOrOff = "off" Then
         iconStr = "off.ico"
     End If
-    shortcut.IconLocation = ProxySettings_path + "\Icons\" + iconStr
+    shortcut.IconLocation = ProxySettings_path + "\icons\" + iconStr
     'Save the shortcut
     shortcut.Save
 End Sub

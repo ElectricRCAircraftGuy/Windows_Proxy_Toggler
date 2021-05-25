@@ -1,7 +1,7 @@
 # Windows_Proxy_Toggler
 A clickable icon on your Windows desktop to toggle your proxy on and off.
 
-See [my answer on Stack Overflow][my_ans] for details and more info.
+See [my answer on Stack Overflow][my_ans] for more details and info.
 
 Here's what it looks like when the Proxy is OFF:
 
@@ -26,8 +26,14 @@ Updated: 25 June 2017
 Updated and added to GitHub: 25 May 2021  
 
 
-# Instructions
+# Installation and Usage Instructions
 
+1. Download this repository directly into your **"C:\Users\YOUR_USERNAME"** folder. You will now have **"C:\Users\YOUR_USERNAME\Windows_Proxy_Toggler"**.
+1. Now, double-click the **"C:\Users\YOUR_USERNAME\Windows_Proxy_Toggler\toggle_proxy_on_off.vbs"** file to run it. It will automatically create a **"Proxy On-Off"** shortcut file on your desktop, with the appropriate icon to indicate whether the Proxy is ON or OFF.
+1. From this point on, just click the **"Proxy On-Off"** desktop shortcut directly to toggle the Proxy on and off!
+1. _If you find this useful, tell me "thank you" by [upvoting my Stack Overflow answer on this here][my_ans]._ You can also [sponsor me on GitHub here](https://github.com/sponsors/ElectricRCAircraftGuy). Consider $1/month.
+
+That's it! See images of what the desktop shortcut and popup window look like, above. 
 
 
 # References:
@@ -37,6 +43,10 @@ Updated and added to GitHub: 25 May 2021
 1. Timed message boxes:
     1. \*\*\*\*\*https://technet.microsoft.com/en-us/library/ee156593.aspx
     1. https://stackoverflow.com/questions/14105157/automatically-close-msgbox-in-vbscript
+1. Original source for the two icon .png images (these links are dead now): 
+    1. ON icon image: http://s30.postimg.org/sgoerz0od/image.png
+    1. OFF icon image: http://s13.postimg.org/9zha38zkj/off.png
+1. How to convert those images to icons (.ico files): use http://icoconvert.com/, for example. Choose File (choose a .png from above) --> Upload --> choose "ICO for Windows 7, Windows 8, Vista and XP" format --> click "Convert ICO" --> click "Download your icon(s)".
 
 Debug output:
 - ex: Wscript.Echo "here is your message"
